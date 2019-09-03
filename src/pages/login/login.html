@@ -1,0 +1,45 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header-->
+
+
+<ion-content padding style="vertical-align: middle">
+
+  <div>
+      <ion-list>
+
+        <html>
+            <h1 style="font-size: 32px; text-align: center/left">Bem vindo de volta!</h1>
+            <h2 style="color: lightgray; font-size: 18px; text-align: left" >Faça login com sua conta</h2>
+        </html>
+        <ion-item>
+          <ion-input style="text-align: left" type="endEmail" placeholder="Endereço de email" ></ion-input>
+          <!-- [(ngModel)]="matricula" -- [(ngModel)] - usado para receber o valor na variavel mmatricula-->
+        </ion-item>
+        <ion-item>
+          <ion-input type="senhaUser" placeholder="Senha" ></ion-input>
+        </ion-item>
+        <button ion-button margin-center style="background-color: red" (click)="goToMeusDados()">
+          LOGIN
+        </button>
+
+        <button ion-button style="color: goldenrod" (click)="goToMeusDados()">
+          Cadastre-se
+        </button>
+        <!--TODO:usuario ficara logado direto ou tera que logar sempre que abrir o app?
+              tera botao para o usuario sair ou editar os dados dele?
+              pode ter mais de um endereço cadastrado?-->
+        </ion-list>
+  </div>
+
+</ion-content>
