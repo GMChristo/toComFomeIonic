@@ -21,23 +21,23 @@
       <div>
           <h1 style="font-size: 10px; text-align: center/left">Dados pessoais</h1> <!--TODO: colocar em italico e mudar o estilo da fonte-->
           <ion-item>
-            <ion-input type="nomeCliente" placeholder="Nome" ></ion-input>
-            <ion-input type="sobrenomeCliente" placeholder="Sobrenome" ></ion-input>
+            <ion-input type="nomeCliente" placeholder="Nome" [(ngModel)]="nomeCliente"></ion-input>
+            <ion-input type="sobrenomeCliente" placeholder="Sobrenome" [(ngModel)]="sobrenomeCliente"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input type="cpfCnpjCliente" placeholder="CPF / CNPJ" ></ion-input>
+            <ion-input type="cpfCnpjCliente" placeholder="CPF / CNPJ" [(ngModel)]="cpfCnpjCliente"></ion-input>
           </ion-item>
       </div>
       <div>
           <h1 style="font-size: 10px; text-align: center/left">Endereço</h1> <!--TODO: colocar em italico e mudar o estilo da fonte-->
           <ion-item>
-            <ion-input type="endCliente" placeholder="Endereço" ></ion-input>
-            <ion-input type="numCliente" placeholder="Nº" ></ion-input>
+            <ion-input type="endCliente" placeholder="Endereço" [(ngModel)]="endCliente"></ion-input>
+            <ion-input type="numCliente" placeholder="Nº" [(ngModel)]="numCliente"></ion-input>
           </ion-item>
           <ion-item>
               <ion-item>
-                  <ion-input type="bairroCliente" placeholder="Bairro" ></ion-input>
-                  <ion-input type="cepCliente" placeholder="CEP" ></ion-input>
+                  <ion-input type="bairroCliente" placeholder="Bairro" [(ngModel)]="bairroCliente"></ion-input>
+                  <ion-input type="cepCliente" placeholder="CEP" [(ngModel)]="cepCliente"></ion-input>
                 </ion-item>
           </ion-item>
       </div>
@@ -45,17 +45,17 @@
         <h1 style="font-size: 10px; text-align: center/left">Login</h1> <!--TODO: colocar em italico e mudar o estilo da fonte-->
           <ion-item>
               <ion-item>
-                  <ion-input type="emailCliente" placeholder="Email" ></ion-input>
+                  <ion-input type="emailCliente" placeholder="Email" [(ngModel)]="emailCliente"></ion-input>
                 </ion-item>
               <ion-item>
-                  <ion-input type="senhaCliente" placeholder="Senha" ></ion-input>
+                  <ion-input type="senhaCliente" placeholder="Senha" [(ngModel)]="senhaCliente"></ion-input>
                 </ion-item>
               <ion-item>
-                  <ion-input type="senhaCliente" placeholder="Senha" ></ion-input>
+                  <ion-input type="senhaClienteConfirma" placeholder="Confirmar Senha" [(ngModel)]="senhaClienteConfirma"></ion-input>
                 </ion-item>
           </ion-item>
       </div>
-      <button ion-button margin-center style="background-color: red" >
+      <button ion-button margin-center (click)="salvarDadosCliente()">
           Salvar
         </button>
       

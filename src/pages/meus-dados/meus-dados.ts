@@ -15,11 +15,33 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MeusDadosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  /*private nomeCliente: string;
+  private sobrenomeCliente: string;
+  private cpfCnpjCliente: string;
+  private endCliente: string;
+  private numCliente: string;
+  private bairroCliente: string;
+  private cepCliente: string;
+  private emailCliente: string;
+  */
+ private senhaCliente: string
+ private senhaClienteConfirma: string;
+
+ constructor(public navCtrl: NavController, public navParams: NavParams) {
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MeusDadosPage');
   }
+
+ salvarDadosCliente(){
+   console.log(this.senhaCliente + ' - ' + this.senhaClienteConfirma);
+   if(this.senhaCliente!=this.senhaClienteConfirma){
+     alert("Insira duas senhas iguais!");
+   }
+   if(this.senhaCliente==this.senhaClienteConfirma){
+     alert("As duas senhas são iguais!");
+   }
+ }
 
 }

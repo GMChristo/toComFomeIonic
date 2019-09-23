@@ -16,6 +16,9 @@ import { MeusDadosPage } from '../meus-dados/meus-dados';
 })
 export class LoginPage {
 
+  private emailLogin: string;
+  private senhaLogin: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

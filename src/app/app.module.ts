@@ -22,7 +22,7 @@ import { MeusDadosPage } from '../pages/meus-dados/meus-dados';
     HomePage,
     TabsPage,
     LoginPage,
-    MeusDadosPage
+    MeusDadosPage,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,7 @@ import { MeusDadosPage } from '../pages/meus-dados/meus-dados';
     HomePage,
     TabsPage,
     LoginPage,
-    MeusDadosPage
+    MeusDadosPage,
   ],
   providers: [
     StatusBar,

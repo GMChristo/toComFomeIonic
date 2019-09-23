@@ -23,13 +23,13 @@
             <h2 style="color: lightgray; font-size: 18px; text-align: left" >Faça login com sua conta</h2>
         </html>
         <ion-item>
-          <ion-input style="text-align: left" type="endEmail" placeholder="Endereço de email" ></ion-input>
+          <ion-input style="text-align: left" type="emailLogin" placeholder="Endereço de email" [(ngModel)]="emailLogin"></ion-input>
           <!-- [(ngModel)]="matricula" -- [(ngModel)] - usado para receber o valor na variavel mmatricula-->
         </ion-item>
         <ion-item>
-          <ion-input type="senhaUser" placeholder="Senha" ></ion-input>
+          <ion-input type="senhaLogin" placeholder="Senha" [(ngModel)]="senhaLogin"></ion-input>
         </ion-item>
-        <button ion-button margin-center style="background-color: red" (click)="goToMeusDados()">
+        <button ion-button margin-center style="background-color:darkred" (click)="goToMeusDados()">
           LOGIN
         </button>
 
